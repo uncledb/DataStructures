@@ -17,7 +17,7 @@ public class LinearList {
 	}
 
 	/**
-	 * 查询
+	 * 查 询
 	 * 
 	 * @param index
 	 */
