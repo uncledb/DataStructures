@@ -1,4 +1,4 @@
-package LinearList;
+package linearlist;
 
 public class LinearList {
 

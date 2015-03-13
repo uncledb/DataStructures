@@ -1,4 +1,4 @@
-package LinearList;
+package linearlist;
 public class TestGaoSi {
 	// 计算从1加到100
 	public static void main(String[] args) {

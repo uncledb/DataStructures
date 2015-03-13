@@ -1,4 +1,4 @@
-package SingleLinkedList;
+package singlelinkedlist;
 
 /**
  * 假设头结点数据域有意义

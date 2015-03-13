@@ -1,4 +1,4 @@
-package SingleLinkedList;
+package singlelinkedlist;
 
 public class Node {
 	private int value;
