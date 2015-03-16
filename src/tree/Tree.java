@@ -1,11 +1,11 @@
 package tree;
 
 /**
- * ¹ØÓÚ±éÀúµÄÏ°Ìâ£¨ÒÑÖªÇ°ÖĞ »òÕß ºóÖĞ ÇóÁíÒ»ÖÖ±éÀú£© ×Ô¼º×Ü½áµÄ½â·¨ÈçÏÂ£º
+ * å…³äºéå†çš„ä¹ é¢˜ï¼ˆå·²çŸ¥å‰ä¸­ æˆ–è€… åä¸­ æ±‚å¦ä¸€ç§éå†ï¼‰ è‡ªå·±æ€»ç»“çš„è§£æ³•å¦‚ä¸‹ï¼š
  * 
- * 1.¸ù¾İÇ°Ğò»òÕßºóĞø µÃµ½¸ù½áµã£¬ÔÙ¸ù¾İÖĞĞòµÃµ½¸ù½áµãµÄ×óÓÒº¢×ÓÃÇ 
- * 2.µİ¹é1£¬ÕÒ×óº¢×ÓµÄ×óÓÒº¢×ÓÃÇ£¬ÔÙÕÒÓÒº¢×ÓµÄ×óÓÒº¢×ÓÃÇ
- * 3.¸ù¾İÇ°Ğò»òÕßºóĞø£¬ÓëÖĞĞòµÄ¶Ô±È£¬È·¶¨µ½µ×ÊÇ×óº¢×Ó»¹ÊÇÓÒº¢×Ó
+ * 1.æ ¹æ®å‰åºæˆ–è€…åç»­ å¾—åˆ°æ ¹ç»“ç‚¹ï¼Œå†æ ¹æ®ä¸­åºå¾—åˆ°æ ¹ç»“ç‚¹çš„å·¦å³å­©å­ä»¬ 
+ * 2.é€’å½’1ï¼Œæ‰¾å·¦å­©å­çš„å·¦å³å­©å­ä»¬ï¼Œå†æ‰¾å³å­©å­çš„å·¦å³å­©å­ä»¬
+ * 3.æ ¹æ®å‰åºæˆ–è€…åç»­ï¼Œä¸ä¸­åºçš„å¯¹æ¯”ï¼Œç¡®å®šåˆ°åº•æ˜¯å·¦å­©å­è¿˜æ˜¯å³å­©å­
  * 
  * @author uncle
  * 
@@ -15,13 +15,13 @@ public class Tree {
 
 	public static void main(String[] args) {
 		Tree t = new Tree();
-		System.out.println("Ç°Ğò±éÀú£º");
+		System.out.println("å‰åºéå†ï¼š");
 		t.preOrderTraverse(t.getRootNode());
 		System.out.println();
-		System.out.println("ÖĞĞò±éÀú£º");
+		System.out.println("ä¸­åºéå†ï¼š");
 		t.inOrderTraverse(t.getRootNode());
 		System.out.println();
-		System.out.println("ºóĞò±éÀú£º");
+		System.out.println("ååºéå†ï¼š");
 		t.postOrderPrint(t.getRootNode());
 	}
 
@@ -45,11 +45,11 @@ public class Tree {
 	}
 
 	/**
-	 * Ç°Ğò±éÀú
+	 * å‰åºéå†
 	 */
 	public void preOrderTraverse(Node node) {
-		// ÏÈ±éÀú¸ù½Úµã È»ºóÇ°Ğò±éÀú×ó×ÓÊ÷ ÔÙÇ°Ğò±éÀúÓÒ×ÓÊ÷
-		// Ç°Ğò£ºÏÈ¸ù½áµã ÔÙ×ó×ÓÊ÷ ÔÙÓÒ×ÓÊ÷
+		// å…ˆéå†æ ¹èŠ‚ç‚¹ ç„¶åå‰åºéå†å·¦å­æ ‘ å†å‰åºéå†å³å­æ ‘
+		// å‰åºï¼šå…ˆæ ¹ç»“ç‚¹ å†å·¦å­æ ‘ å†å³å­æ ‘
 		if (node == null) {
 			return;
 		}
@@ -59,7 +59,7 @@ public class Tree {
 	}
 
 	/**
-	 * ÖĞĞò±éÀú
+	 * ä¸­åºéå†
 	 */
 	public void inOrderTraverse(Node node) {
 		if (node == null) {
@@ -71,7 +71,7 @@ public class Tree {
 	}
 
 	/**
-	 * ºóĞò±éÀú
+	 * ååºéå†
 	 */
 	public void postOrderPrint(Node node) {
 		if (node == null) {
