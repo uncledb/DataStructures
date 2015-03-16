@@ -30,6 +30,7 @@ public class Simple {
 		int fatheri = 1;
 
 		for (int i = 0; i <= fatherChars.length - sonChars.length; i++) {
+			
 		}
 
 		return index;

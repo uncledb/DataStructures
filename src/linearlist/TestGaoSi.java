@@ -1,4 +1,5 @@
 package linearlist;
+
 public class TestGaoSi {
 	// 计算从1加到100
 	public static void main(String[] args) {
@@ -16,7 +17,7 @@ public class TestGaoSi {
 	}
 
 	public void gaoSiTest() {
-		int i = 1, sum = 0, n = 100;
+		int sum = 0, n = 100;
 		sum = n * (n + 1) / 2;
 		System.out.println(sum);
 	}
